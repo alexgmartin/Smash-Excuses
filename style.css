@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&family=Bangers&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  background: #fb2929;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ff6464;
+  padding: 2rem 0;
+}
+
+.container h1 {
+  font-family: 'Bangers', sans-serif;
+  font-size: 2.5rem;
+  line-height: 0.8;
+  text-align: center;
+  margin: 0;
+  padding: .25rem 0;
+}
+
+.container p {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.generateBtn {
+  color: white;
+  background: rgb(0, 150, 57);
+  padding: .5rem 1.8rem;
+  border-radius: 25px;
+  border: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: .5rem 0;
+
+}
