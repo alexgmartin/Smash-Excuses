@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Smash Bros. Excuse Generator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="container">
-    <h1>Smash Bros. Excuse Generator</h1>
-    <p>When the salt's not your fault.</p>
-    <button class="generateBtn">
-      Generate
-    </button>
-  </div>
+  <div class="wrapper"></div>
+    <div class="container">
+      <h1>Smash Bros. Excuse Generator</h1>
+      <p>When the salt's not your fault.</p>
+      <button onmousedown="smash.play()" class="generateBtn" id="open">
+        Generate
+      </button>
+
+      <!-- Modal -->
+      <div class="modal-container" id="modal">
+        <div class="modal">
+          <button class="close-btn" id="close">
+            <i class="fa fa-times"></i>
+          </button>
+          <div class="modal-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque harum architecto cumque minima at, fugit
+              earum optio deleniti suscipit nobis tempora! Mollitia quia commodi odit voluptatibus! Accusamus velit fuga
+              in mollitia qui delectus. Debitis consequuntur nobis autem repellat corrupti quia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
