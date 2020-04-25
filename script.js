@@ -1,18 +1,14 @@
-const close = document.getElementById('close');
-const open = document.getElementById('open');
-const modal = document.getElementById('modal');
 const smash = new Audio();
+
 smash.src = '/smash.wav';
 
-// Show modal
-open.addEventListener('click', () => 
-  modal.classList.add('show-modal')
-);
+let data = [];
 
-// Hide modal
-close.addEventListener('click', () => 
-  modal.classList.remove('show-modal')
-);
+async function getQuoteData() {
+  const res = await fetch('https://spreadsheets.google.com/feeds/cells/1mRVpIOEJ01YKqlWAlpPvQVn2rCSqkq9K7nKpslfhYbc/1/public/full?alt=json');
+  const data = await res.json();
 
-// Hide modal on outside click
-window.addEventListener('click', e=> e.target == modal ? modal.classList.remove('show-modal') : false);
+  console.log(data);
+}
+
+getQuoteData();
