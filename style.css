@@ -63,7 +63,7 @@ body {
 
 }
 
-.quoteWrapper {
+#quoteWrapper {
   display: flex;
   justify-content: center;
   max-width: 600px;
@@ -73,3 +73,16 @@ body {
   margin: 0 .5rem;
 
 }
+
+#quoteText {
+  text-align: center;
+  color: #000;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+
+
+
+
+
