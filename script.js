@@ -1,4 +1,4 @@
- const generateBtn = document.getElementById('generateBtn');
+const generateBtn = document.getElementById('generateBtn');
 const smashAudio = document.getElementById("smashAudio");
 let quoteText = document.getElementById('quoteText');
 let quoteWrapper = document.getElementById('quoteWrapper');
@@ -25,12 +25,12 @@ async function getQuoteData() {
 
 }
 
-// Define function to play mp3 audio. Referenced as onmouseover on a button in html file
+// Define function to play mp3 audio. Referenced as onmouseover on generate button in html file
 const playAudio = () => {
   smashAudio.play();
 }
 
-// On click, generate button calls getQuoteData to display random quote
+// On click, the generate button calls getQuoteData to display random quote
 generateBtn.addEventListener('click', getQuoteData);
 
 
