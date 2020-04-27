@@ -30,7 +30,11 @@ const playAudio = () => {
   smashAudio.play();
 }
 
+// Load the quote data on page load
+getQuoteData();
+
 // On click, the generate button calls getQuoteData to display random quote
 generateBtn.addEventListener('click', getQuoteData);
+
 
 
