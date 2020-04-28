@@ -3,6 +3,7 @@ const smashAudio = document.getElementById("smashAudio");
 let quoteText = document.getElementById('quoteText');
 let quoteWrapper = document.getElementById('quoteWrapper');
 
+// Fade in text on page load
 document.getElementById('quoteText').style.opacity = 1;
 
 async function getQuoteData() {
@@ -16,9 +17,10 @@ async function getQuoteData() {
   let datas = [];
 
   // Loop through each quote and add quote to 'datas' array
-  rootData.forEach((item) => {
-    datas.push(item.content.$t);
+  rootData.map((item) => {
+    datas.push(item.content.$t)
   });
+
 
   // Display random array entry (Random quote)
   quoteText.innerHTML = datas[Math.floor(Math.random()*datas.length)];
